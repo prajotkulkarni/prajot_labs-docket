@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folio</title>
+    <link rel="stylesheet" href="foliostyle.css">
+    <script src="https://kit.fontawesome.com/b3416159af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="snaps/loading-transmission.gif" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Experience</a></li>
+                    <li><a href="#portfolio">Publication & Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Cloud Enginner</p>
+                <h1>Hi, I am <span>Prajot</span></h1>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------- about------------------------------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="snaps/myimg.jpg" alt="photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>                        
+                        Hi, I'm Prajot, with three years of experience at Tata Consultancy Services Ltd Pune, Maharashtra. 
+                        I specialize in AWS development and infrastructure engineering, 
+                        focusing on orchestrating deployments in AWS with AWS CDK (Typescript)- EC2, ECS, lambda and more, 
+                        while also deploying Docker images to AWS ECR. And optimizing pipelines with GitHub Actions. 
+                        I've successfully migrated legacy code to AWS, utilized Lambda for business logic, 
+                        and ensured reliability in Serverless systems. 
+                        Proficient in AWS CloudFormation and CDK,
+                        I've contributed, managed and supported projects at organizations like the Bank of Montreal, Canada.
+                        In addition to my technical skills, I like connecting with people and fostering collaboration. 
+                        I'm resilient, and I'm always eager to know, learn and explore new things.
+                        <br><br>
+                        In addition to my technical skills, 
+                        I like connecting with people and fostering collaboration. 
+                        I'm resilient to tasks and I'm always eager to know, learn and explore new things.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Language</p>
+                        <p class="tab-links" onclick="opentab('education')">Internship</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>SGBIT - Visvesvaraya Technological University, Belgaum</span><br>Bachelor of Engineering </li>
+                            <li><span>R.L Science institute, Belgaum</span><br>Pre-University</li>
+                            <li><span>M.V.M's English medium high school, Belgaum</span><br>High School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>English</span><br>Proficient</li>
+                            <li><span>Hindi</span><br>Good</li>
+                            <li><span>Marathi</span><br>Good</li>
+                            <li><span>Kannada</span><br>Intermediate</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Enthu Technology Solutions, Bangalore</span><br>PCB Designing and hardware assembling (IoT)</li>
+                            <li><span>Aditya Enterprises, Belgaum</span><br>Hardware assembling and documentation</li>
+                            <!-- <li><span>Education</span><br>webapp</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- ------------------- services --------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Experience</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-aws"></i>
+                    <h2>AWS Devops Enginner</h2>
+                    <p>
+                        Experienced in utilizing AWS CDK (Typescript) to automate deployment processes, including setting up AWS resources such as ECR, ECS, EC2 instances, and Lambda functions, and documenting solutions for Proof of Concept (PoC) implementations.
+                    </p>
+                    <a href="#" onclick="alertMessage()">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-github"></i><i class="fa-brands fa-jira"></i><i class="fa-brands fa-confluence"></i>
+                    <h2>Platform tools and integration</h2>
+                    <p>
+                        Proficient in creating GitHub Actions workflows to automate operations such as pull, build, and push, seamlessly integrating with AWS ECR, while also contributing to the setup of GitHub Self-hosted runners on AWS EC2 infrastructure, using AWS CDK (Typescript). Additionally, experienced in utilizing Jira and Confluence for project management and documentation purposes.
+                    </p>
+                    <a href="#" onclick="alertMessage()">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-docker"></i><i class="fa-brands fa-node-js"></i>
+                    <h2>Cloud Enginnering Support</h2>
+                    <p>
+                        Skilled in providing support for Docker and Node.js environments, offering troubleshooting expertise and assistance to ensure smooth operations and development workflows.
+                    </p>
+                    <a href="#" onclick="alertMessage()">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------------------- portfolio --------------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Publication and Certifications</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="snaps/ieee.jpg" alt="ieee">
+                    <div class="layer">
+                        <h3>Institute of Electrical and Electronics Engineers</h3>
+                        <p>Published conference/Research paper on "Unmanned Ground Vehicle for Security and Surveillance"</p>
+                        <a href="https://ieeexplore.ieee.org/document/9298296" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="snaps/nptel_logo.jpg" alt="nptel">
+                    <div class="layer">
+                        <h3>NPTEL IoT Certificate</h3>
+                        <p>NPTEL Online Certification on Internet of Things from IIT Kharagpur</p>
+                        <a href="snaps/nptelimg.PNG" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="snaps/udemylogo.png" alt="udemy">
+                    <div class="layer">
+                        <h3>Courses</h3>
+                        <p>Obtained course certificates</p>
+                        <a href="snaps/jsbasics.jpg" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" onclick="alertMessage()">see more</a>
+        </div>
+    </div>
+
+<!-- ----------------------- contact -------------------  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="contact-row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-rocket"></i>prajotkulkarni.bgm@gmail.com</p>
+                <pre><p><i class="fa-solid fa-walkie-talkie"></i>Submit details to<br>        get contact number</p></pre>
+                    <div class="social-icons">
+                        <a href="https://medium.com/@prajotkulkarni" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                        <a href="https://in.linkedin.com/in/prajotkulkarni" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/prajotkulkarni" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://ieeexplore.ieee.org/author/37088748921"><i class="fa-solid fa-address-card"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2" onclick="alertMessage()">Download CV</a>
+                </div>
+                <div name="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg" ><i class="fa-solid fa-face-smile"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <marquee>
+            <p>Made and maintained by Prajot-Labs X GreatStack<i class="fa-regular fa-copyright"></i></p>
+            </marquee>
+        </div>
+    </div>
+
+<!-- -------------------------------script ------------------------ -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyRnGtmrdClAcajYX9YlxUoihKUsBiHImITDc45ZPtroE3ckA7-ZCuv7FJ89E3pl0N8sg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = `<pre>Message sent. M.no: 7975651387  <i class="fa-solid fa-face-grin-wide"></i></pre>`
+                setTimeout(function(){
+                    msg.innerHTML = " "
+                },9000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        function alertMessage() {
+            alert("sorry for inconvenience, file-status:updating....."); // Replace with your desired message
+        }       
+
+    </script>
+
+</body>
+</html>
