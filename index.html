@@ -227,7 +227,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = `<pre>Message sent. M.no: $"{{mno}}"  <i class="fa-solid fa-face-grin-wide"></i></pre>`
+                msg.innerHTML = `<pre>Message sent. M.no: "${{mno}}"  <i class="fa-solid fa-face-grin-wide"></i></pre>`
                 setTimeout(function(){
                     msg.innerHTML = " "
                 },9000)
