@@ -1,1 +1,1 @@
-https://prajotkulkarni.github.io/prajot-lab_docket/
+https://prajotkulkarni.github.io/prajot_labs-docket/
